@@ -1,0 +1,25 @@
+PROYECTO SAE ESCOLAR - ORGANIZADO POR CARPETAS
+
+Formularios/
+  index.php, conexion.php, menu.php, estilos.css, sae.sql
+  Entradas/  - Formularios de registro y CRUD de alumnos, profesores, grupos y materias
+  Procesos/  - Asignar grupo, asignar materia, baja de alumno
+  Salidas/   - Listados, boletas, grupos asignados y alumnos de baja
+
+INSTALACIÓN:
+1. Extrae la carpeta Formularios a C:\xampp\htdocs\Formularios
+2. Inicia Apache y MySQL en XAMPP.
+3. Si no tienes la base, importa sae.sql en phpMyAdmin. Si ya tienes datos, no vuelvas a importar sin respaldo.
+4. Abre http://localhost/Formularios/index.php
+5. Usa el menú para entrar a las diferentes secciones.
+
+NOTAS: Los botones Editar y Eliminar están en los archivos crud_*.php dentro de Entradas.
+Eliminar registros relacionados puede estar restringido por las llaves foráneas de MySQL.
+El estado interno ALTA se conserva para la función de bajas, aunque no se muestre en los formularios.
+Antes de probar eliminaciones, haz respaldo de la base de datos.
+
+MENU: Se abre automaticamente al pasar el cursor sobre Menú (CSS :hover). Tambien admite foco con teclado.
+
+MENU: Se abre automaticamente al pasar el mouse sobre Menú, como en el ejemplo de cafetería.
+La carpeta debe llamarse Formularios y estar en C:\xampp\htdocs\Formularios.
+El enlace Inicio apunta a /Formularios/index.php.
